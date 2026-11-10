@@ -1,0 +1,26 @@
+# 빌드 산출물
+*.class
+potatoMarket/src/main/webapp/WEB-INF/classes/
+bin/
+build/
+target/
+/potatoMarket.zip
+
+# Eclipse 설정
+.settings/
+.classpath
+.project
+
+# IntelliJ / OS
+.idea/
+*.iml
+.DS_Store
+
+# Eclipse 워크스페이스 메타데이터
+.metadata/
+
+# 로그, 로컬 설정, 비밀값
+*.log
+.env
+application-local.yml
+application-local.properties

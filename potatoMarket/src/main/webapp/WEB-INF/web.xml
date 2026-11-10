@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee/web-app_2_5.xsd"
+	id="WebApp_ID" version="4.0">
+	<display-name>project</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+
+	<servlet>
+		<servlet-name>ajaxCon</servlet-name>
+		<servlet-class>myServlet.joinDupl</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ajaxCon</servlet-name>
+		<url-pattern>/ajaxCon</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ajaxFindId</servlet-name>
+		<servlet-class>myServlet.findId</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ajaxFindId</servlet-name>
+		<url-pattern>/ajaxFindId</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ajaxFindPw</servlet-name>
+		<servlet-class>myServlet.findPw</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ajaxFindPw</servlet-name>
+		<url-pattern>/ajaxFindPw</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>login_page</servlet-name>
+		<jsp-file>/user/login.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>login_page</servlet-name>
+		<url-pattern>/login_page</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>join_page</servlet-name>
+		<jsp-file>/user/join.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>join_page</servlet-name>
+		<url-pattern>/join_page</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>user_help</servlet-name>
+		<jsp-file>/user/user_help.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>user_help</servlet-name>
+		<url-pattern>/user_help_page</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>resetPw</servlet-name>
+		<jsp-file>/user/resetPw.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>resetPw</servlet-name>
+		<url-pattern>/resetPw_page</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>chatView</servlet-name>
+		<jsp-file>/chat/chatView.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>chatView</servlet-name>
+		<url-pattern>/chatView</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>chatList</servlet-name>
+		<jsp-file>/chat/chatList.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>chatList</servlet-name>
+		<url-pattern>/chatList</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>myPage</servlet-name>
+		<jsp-file>/myPage/mypage.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>myPage</servlet-name>
+		<url-pattern>/myPage</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>bookingList</servlet-name>
+		<jsp-file>/myPage/bookinglist.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>bookingList</servlet-name>
+		<url-pattern>/bookingList</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>orderdList</servlet-name>
+		<jsp-file>/myPage/orderdlist.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>orderdList</servlet-name>
+		<url-pattern>/orderdList</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>favoList</servlet-name>
+		<jsp-file>/myPage/favolist.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>favoList</servlet-name>
+		<url-pattern>/favoList</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>profileUpdate</servlet-name>
+		<jsp-file>/myPage/profileUpdate.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>profileUpdate</servlet-name>
+		<url-pattern>/profileUpdate</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>itemList</servlet-name>
+		<jsp-file>/item/itemlist.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>itemList</servlet-name>
+		<url-pattern>/itemList</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>itemView</servlet-name>
+		<jsp-file>/item/itemView.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>itemView</servlet-name>
+		<url-pattern>/itemView</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>itemUpdate</servlet-name>
+		<jsp-file>/item/itemUpdate.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>itemUpdate</servlet-name>
+		<url-pattern>/itemUpdate</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>itemWrite</servlet-name>
+		<jsp-file>/item/itemWrite.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>itemWrite</servlet-name>
+		<url-pattern>/itemWrite</url-pattern>
+	</servlet-mapping>
+
+</web-app>
